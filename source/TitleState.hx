@@ -165,7 +165,7 @@ class TitleState extends MusicBeatState
 
 		// IGNORE THIS!!!
 		titleJSON = Json.parse(Paths.getTextFromFile('images/gfDanceTitle.json'));
-		exeTitleJSON = Json.parse(File.getContent(Paths.getPath('images/exe/title/ExeTitleData.json')));
+		exeTitleJSON = Json.parse(File.getContent(Paths.getPreloadPath('shared/images/exe/title/ExeTitleData.json')));
 		
 		#if TITLE_SCREEN_EASTER_EGG
 		if (FlxG.save.data.psychDevsEasterEgg == null) FlxG.save.data.psychDevsEasterEgg = ''; //Crash prevention
